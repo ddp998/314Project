@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    tools:context=".choosing_user_type"
+    tools:layout_editor_absoluteY="25dp">
+
+    <Button
+        android:id="@+id/btnBack2"
+        android:layout_width="195dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="109dp"
+        android:background="@drawable/rounded_button"
+        android:text="Back"
+        android:textColor="@color/maintext"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnProfess" />
+
+    <Button
+        android:id="@+id/btnProfess"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="228dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="45dp"
+        android:background="@drawable/rounded_button"
+        android:text="Professional"
+        android:textColor="@color/maintext"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btnBack2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnClient" />
+
+    <TextView
+        android:id="@+id/regHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="122dp"
+        android:layout_marginBottom="34dp"
+        android:text="I am a..."
+        android:textColor="@color/maintext"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btnClient"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnClient"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="228dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="18dp"
+        android:background="@drawable/rounded_button"
+        android:text="Client"
+        android:textColor="@color/maintext"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btnProfess"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/regHeader" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ConstraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    tools:context=".clientreg_bank_info"
+    tools:layout_editor_absoluteY="25dp">
+
+    <TextView
+        android:id="@+id/txtBankDetailsHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="38dp"
+        android:layout_marginLeft="38dp"
+        android:layout_marginTop="95dp"
+        android:layout_marginBottom="42dp"
+        android:text="Bank Details"
+        android:textColor="@color/maintext"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/fieldAcctName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/fieldAcctName"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="27dp"
+        android:ems="10"
+        android:hint="Account Name"
+        android:inputType="textPersonName"
+        android:textColor="@color/maintext"
+        app:layout_constraintBottom_toTopOf="@+id/fieldBankName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtBankDetailsHeader" />
+
+    <EditText
+        android:id="@+id/fieldAccountNum"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="28dp"
+        android:ems="10"
+        android:hint="Account Number"
+        android:inputType="number"
+        android:textColor="@color/maintext"
+        app:layout_constraintBottom_toTopOf="@+id/fieldBsb"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fieldBankName" />
+
+    <EditText
+        android:id="@+id/fieldBankName"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="27dp"
+        android:ems="10"
+        android:hint="Bank Name"
+        android:inputType="textPersonName"
+        android:textColor="@color/maintext"
+        app:layout_constraintBottom_toTopOf="@+id/fieldAccountNum"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fieldAcctName" />
+
+    <EditText
+        android:id="@+id/fieldBsb"
+        android:layout_width="82dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="51dp"
+        android:ems="10"
+        android:hint="BSB"
+        android:inputType="number"
+        android:textColor="@color/maintext"
+        app:layout_constraintBottom_toTopOf="@+id/btnContinueToValidation2"
+        app:layout_constraintStart_toStartOf="@+id/fieldAccountNum"
+        app:layout_constraintTop_toBottomOf="@+id/fieldAccountNum" />
+
+    <Button
+        android:id="@+id/btnContinueToValidation2"
+        android:layout_width="195dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="11dp"
+        android:background="@drawable/rounded_button"
+        android:text="Continue"
+        android:textColor="@color/maintext"
+        app:layout_constraintBottom_toTopOf="@+id/btnBack7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fieldBsb" />
+
+    <Button
+        android:id="@+id/btnBack7"
+        android:layout_width="195dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="85dp"
+        android:background="@drawable/rounded_button"
+        android:text="Back"
+        android:textColor="@color/maintext"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnContinueToValidation2" />
+
+    <ProgressBar
+        android:id="@+id/progressBar3"
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>

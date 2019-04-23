@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    tools:context=".clientreg_pay_type"
+    tools:layout_editor_absoluteY="25dp">
+
+    <Button
+        android:id="@+id/btnBack4"
+        android:layout_width="195dp"
+        android:layout_height="37dp"
+        android:layout_marginBottom="81dp"
+        android:background="@drawable/rounded_button"
+        android:text="Back"
+        android:textColor="@color/maintext"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPpuDescription" />
+
+    <Button
+        android:id="@+id/btnPayPerUse"
+        android:layout_width="222dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="14dp"
+        android:background="@drawable/rounded_button"
+        android:text="Pay Per Use"
+        android:textColor="@color/maintext"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/txtPpuDescription"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtSubDescription" />
+
+    <Button
+        android:id="@+id/btnSubscription"
+        android:layout_width="222dp"
+        android:layout_height="0dp"
+
+        android:layout_marginTop="85dp"
+        android:layout_marginBottom="13dp"
+        android:background="@drawable/rounded_button"
+        android:text="Subscription"
+        android:textColor="@color/maintext"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/txtSubDescription"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtSubDescription"
+        android:layout_width="255dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="44dp"
+        android:gravity="center"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        app:layout_constraintBottom_toTopOf="@+id/btnPayPerUse"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSubscription" />
+
+    <TextView
+        android:id="@+id/txtPpuDescription"
+        android:layout_width="255dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="52dp"
+        android:gravity="center"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        app:layout_constraintBottom_toTopOf="@+id/btnBack4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnPayPerUse" />
+</android.support.constraint.ConstraintLayout>

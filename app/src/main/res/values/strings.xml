@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">firebasetest</string>
+    <string name="title_activity_scrolling">ScrollingActivity</string>
+    <string name="approvalinfo">
+        "In order to ensure the quality of our professionals,\n"
+        "they must pass a short vetting process.\n"
+        "This may take up to 3 business days.\n\n"
+        "Once approved, your account will be made live\n"
+        "and you can begin taking requests."
+    </string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_driver_registration4">driver_registration4</string>
+    <string name="title_activity_client_reg">client_reg</string>
+</resources>

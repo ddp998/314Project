@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg"
+        tools:context=".clientreg_car_details"
+        tools:layout_editor_absoluteY="25dp">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg"
+        tools:context=".client_registration"
+        tools:layout_editor_absoluteY="25dp">
+
+        <TextView
+            android:id="@+id/txtCarDetailsHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="38dp"
+            android:layout_marginLeft="38dp"
+            android:layout_marginTop="68dp"
+            android:layout_marginBottom="16dp"
+            android:text="Car Details"
+            android:textColor="@color/maintext"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/fieldLicenseNum"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/fieldLicenseNum"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="27dp"
+            android:ems="10"
+            android:hint="License Number"
+            android:inputType="number"
+            android:textColor="@color/maintext"
+            app:layout_constraintBottom_toTopOf="@+id/fieldRegNum"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtCarDetailsHeader" />
+
+        <EditText
+            android:id="@+id/fieldRegNum"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="27dp"
+            android:ems="10"
+            android:hint="Registration Number"
+            android:inputType="textPersonName"
+            android:textColor="@color/maintext"
+            app:layout_constraintBottom_toTopOf="@+id/transmissionGroup"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fieldLicenseNum" />
+
+        <TextView
+            android:id="@+id/lblTransmission"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="81dp"
+            android:layout_marginLeft="81dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="17dp"
+            android:layout_marginRight="17dp"
+            android:text="Transmission:"
+            android:textColor="@color/maintext"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toStartOf="@+id/transmissionGroup"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/transmissionGroup" />
+
+        <RadioGroup
+            android:id="@+id/transmissionGroup"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="63dp"
+            android:layout_marginRight="63dp"
+            android:layout_marginBottom="27dp"
+            app:layout_constraintBottom_toTopOf="@+id/spnerMake"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/lblTransmission"
+            app:layout_constraintTop_toBottomOf="@+id/fieldRegNum">
+
+            <RadioButton
+                android:id="@+id/rdBtnAutomatic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Automatic"
+                android:textColor="@color/maintext"
+                tools:layout_editor_absoluteX="92dp"
+                tools:layout_editor_absoluteY="286dp" />
+
+            <RadioButton
+                android:id="@+id/rdBtnManual"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Manual"
+                android:textColor="@color/maintext"
+                tools:layout_editor_absoluteX="216dp"
+                tools:layout_editor_absoluteY="285dp" />
+        </RadioGroup>
+
+        <Spinner
+            android:id="@+id/spnerMake"
+            android:layout_width="250dp"
+            android:layout_height="32dp"
+            android:layout_marginBottom="27dp"
+            android:background="@drawable/rounded_button"
+            app:layout_constraintBottom_toTopOf="@+id/spnerModel"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/transmissionGroup" />
+
+        <Spinner
+            android:id="@+id/spnerModel"
+            android:layout_width="250dp"
+            android:layout_height="32dp"
+            android:layout_marginBottom="27dp"
+            android:background="@drawable/rounded_button"
+            app:layout_constraintBottom_toTopOf="@+id/fieldYear"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spnerMake" />
+
+        <EditText
+            android:id="@+id/fieldYear"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="27dp"
+            android:ems="10"
+            android:hint="Year"
+            android:inputType="number"
+            android:textColor="@color/maintext"
+            app:layout_constraintBottom_toTopOf="@+id/fieldSeries"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spnerModel" />
+
+        <EditText
+            android:id="@+id/fieldSeries"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="27dp"
+            android:ems="10"
+            android:hint="Series"
+            android:inputType="text"
+            android:textColor="@color/maintext"
+            app:layout_constraintBottom_toTopOf="@+id/fieldEngine"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fieldYear" />
+
+        <EditText
+            android:id="@+id/fieldEngine"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:ems="10"
+            android:hint="Engine"
+            android:inputType="text"
+            android:textColor="@color/maintext"
+            app:layout_constraintBottom_toTopOf="@+id/btnContinueRegisterClient2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fieldSeries" />
+
+        <Button
+            android:id="@+id/btnContinueRegisterClient2"
+            android:layout_width="195dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/rounded_button"
+            android:text="Continue"
+            android:textColor="@color/maintext"
+            app:layout_constraintBottom_toTopOf="@+id/btnBack3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/btnBack3"
+            android:layout_width="195dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="68dp"
+            android:background="@drawable/rounded_button"
+            android:text="Back"
+            android:textColor="@color/maintext"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>
