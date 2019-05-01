@@ -11,4 +11,10 @@
     <string name="action_settings">Settings</string>
     <string name="title_activity_driver_registration4">driver_registration4</string>
     <string name="title_activity_client_reg">client_reg</string>
+    <string name="title_activity_client_map_1">client_map_1</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
 </resources>

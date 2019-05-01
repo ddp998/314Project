@@ -81,8 +81,6 @@ public class login extends AppCompatActivity {
                     if (task.isSuccessful()) {
                         progressBar2.setVisibility(View.INVISIBLE);
 
-                        Toast.makeText(login.this, "Successfully logged in.", Toast.LENGTH_LONG).show();
-
                         openDashMap();
                     } else {
                         progressBar2.setVisibility(View.INVISIBLE);
