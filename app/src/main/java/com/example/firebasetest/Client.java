@@ -1,7 +1,5 @@
 package com.example.firebasetest;
 
-import java.util.ArrayList;
-
 public class Client extends User {
     String licenseNum;
     PaymentType paymentType;
@@ -9,7 +7,7 @@ public class Client extends User {
     PaymentCard cardInfo = null;
     PaymentBank bankInfo = null;
 
-    /* demo constructor
+    /* initial demo constructor
     public Client(String firstName, String lastName, String email, String phone) {
         this.firstName = firstName;
         this.lastName = lastName;
@@ -67,4 +65,6 @@ public class Client extends User {
     public void setBankInfo(PaymentBank bankInfo) {
         this.bankInfo = bankInfo;
     }
+
+
 }

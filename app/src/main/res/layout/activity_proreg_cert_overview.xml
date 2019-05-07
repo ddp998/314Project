@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    tools:context=".proreg_cert_overview">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="360dp"
+        android:layout_marginBottom="100dp"
+        android:background="@color/bg"
+        android:fadeScrollbars="false"
+        android:padding="4dp"
+        android:scrollbars="vertical" />
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="360dp"
+        android:layout_marginBottom="100dp"
+        android:scrollbars="vertical"></ListView>
+
+    <Button
+        android:id="@+id/btnAddAnotherCert"
+        android:layout_width="195dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="177dp"
+        android:background="@drawable/rounded_button"
+        android:text="Add Certification"
+        android:textColor="@color/maintext" />
+
+    <Button
+        android:id="@+id/btnContinueProReg2"
+        android:layout_width="195dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="124dp"
+        android:background="@drawable/rounded_button"
+        android:text="Continue"
+        android:textColor="@color/maintext" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="70dp"
+        android:text="You can add more certifications after registration."
+        android:textColor="@color/maintext" />
+
+    <ProgressBar
+        android:id="@+id/progressBar4"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="298dp"
+        android:visibility="gone" />
+</RelativeLayout>

@@ -35,7 +35,7 @@ public class proreg_agreement extends AppCompatActivity {
     }
 
     public void openProDetails() {
-        Intent intent = new Intent(this, proreg_details.class);
+        Intent intent = new Intent(this, proreg_pro_details.class);
         startActivity(intent);
     }
 

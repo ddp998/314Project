@@ -10,8 +10,6 @@ import android.widget.Toast;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class clientreg_end extends AppCompatActivity {
-    FirebaseAuth firebaseAuth;
-
     Button btnStartApp;
 
     @Override
@@ -32,7 +30,7 @@ public class clientreg_end extends AppCompatActivity {
     }
 
     public void openDashMap() {
-        Intent intent = new Intent(this, mapgoesherelol.class);
+        Intent intent = new Intent(this, client_dashmap.class);
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(intent);
     }

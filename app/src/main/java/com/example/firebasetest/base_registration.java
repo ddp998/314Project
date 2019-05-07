@@ -204,7 +204,7 @@ public class base_registration extends AppCompatActivity {
 
     //user is already logged in, open dashboard map
     public void openDashMap() {
-        Intent intent = new Intent(this, mapgoesherelol.class);
+        Intent intent = new Intent(this, client_dashmap.class);
         startActivity(intent);
     }
 }

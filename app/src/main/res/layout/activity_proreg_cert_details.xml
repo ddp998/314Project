@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    tools:context=".proreg_cert_details"
+    tools:layout_editor_absoluteY="25dp">
+
+    <Button
+        android:id="@+id/btnBackToProDetails"
+        android:layout_width="195dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="153dp"
+        android:background="@drawable/rounded_button"
+        android:text="Back"
+        android:textColor="@color/maintext"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnContinueProReg" />
+
+    <Button
+        android:id="@+id/btnContinueProReg"
+        android:layout_width="195dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="18dp"
+        android:background="@drawable/rounded_button"
+        android:text="Continue"
+        android:textColor="@color/maintext"
+        app:layout_constraintBottom_toTopOf="@+id/btnBackToProDetails"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fieldIssueDate" />
+
+    <EditText
+        android:id="@+id/fieldIssueDate"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="99dp"
+        android:ems="10"
+        android:hint="Date Issued"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/btnContinueProReg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fieldIssuedBy" />
+
+    <EditText
+        android:id="@+id/fieldIssuedBy"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:hint="Institution"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/fieldIssueDate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fieldCertTitle" />
+
+    <TextView
+        android:id="@+id/txtDetailsHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="38dp"
+        android:layout_marginLeft="38dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginBottom="53dp"
+        android:text="Certification Details"
+        android:textColor="@color/maintext"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/fieldCertTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/fieldCertTitle"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:hint="Certificate Title"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/fieldIssuedBy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDetailsHeader" />
+
+</android.support.constraint.ConstraintLayout>

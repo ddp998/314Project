@@ -16,7 +16,7 @@
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/map_key" />
-
+        //screen that app starts on
         <activity android:name=".login">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -34,8 +34,13 @@
         <activity android:name=".clientreg_bank_info" />
         <activity android:name=".clientreg_end" />
         <activity android:name=".proreg_agreement" />
-        <activity android:name=".proreg_details" />
-        <activity android:name=".mapgoesherelol" />
+        <activity android:name=".proreg_cert_details" />
+        <activity android:name=".client_dashmap" />
+        <activity android:name=".proreg_cert_overview" />
+        <activity android:name=".proreg_end" />
+        <activity android:name=".proreg_pro_details" />
+        <activity android:name=".pro_dashmap" />
+        <activity android:name=".pro_request_list"></activity>
     </application>
 
 </manifest>

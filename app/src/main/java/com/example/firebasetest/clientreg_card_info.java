@@ -20,6 +20,8 @@ public class clientreg_card_info extends AppCompatActivity {
     static Date expiryDate;
     static String securityCode;
 
+    //TODO expiry date (w/ date picker), add card to database, fix layout for mobile demo
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -139,5 +141,3 @@ public class clientreg_card_info extends AppCompatActivity {
         startActivity(intent);
     }
 }
-
-// TODO expiry date, add card to database

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    tools:context=".proreg_pro_details">
+
+    <Button
+        android:id="@+id/btnBackToAgreement"
+        android:layout_width="195dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="110dp"
+        android:background="@drawable/rounded_button"
+        android:text="Back"
+        android:textColor="@color/maintext"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnContinueProReg3" />
+
+    <Button
+        android:id="@+id/btnContinueProReg3"
+        android:layout_width="195dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/rounded_button"
+        android:text="Continue"
+        android:textColor="@color/maintext"
+        app:layout_constraintBottom_toTopOf="@+id/btnBackToAgreement"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtOtherwise" />
+
+    <TextView
+        android:id="@+id/txtCompanyHead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="210dp"
+        android:layout_marginBottom="22dp"
+        android:gravity="center_horizontal"
+        android:text="@string/companyinfo"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/fieldCompanyName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="spread_inside" />
+
+    <EditText
+        android:id="@+id/fieldCompanyName"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="74dp"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="Company Name (optional)"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/txtOtherwise"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCompanyHead" />
+
+    <TextView
+        android:id="@+id/txtOtherwise"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="21dp"
+        android:gravity="center_horizontal"
+        android:text="@string/otherwise"
+        app:layout_constraintBottom_toTopOf="@+id/btnContinueProReg3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fieldCompanyName" />
+</android.support.constraint.ConstraintLayout>
