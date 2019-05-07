@@ -27,10 +27,16 @@ public class mapgoesherelol extends FragmentActivity implements OnMapReadyCallba
     FusedLocationProviderClient fusedLocationProviderClient;
     private static final int REQUEST_CODE = 101;
 
+    //Button btnName;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mapgoesherelol);
+
+        //btnName = findViewById(R.id.btnName);
+        //btnName.setOnClickListener(stuff);
+
 
         //location services instance
         fusedLocationProviderClient = LocationServices.getFusedLocationProviderClient(this);
